@@ -1,0 +1,289 @@
+        @font-face {
+            font-family: WebSymbols;
+            src: url(WebSymbols-Regular.otf);
+            font-weight: bold;
+        }
+        
+        body {
+            background-color: lightgray;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid black; */
+            height: 100vh;
+            align-items: center;
+            background-image: url(708746.jpg);
+            /* background-repeat: repeat-x;
+            background-size: cover; */
+            box-sizing: border-box;
+        }
+        
+        .responsive {
+            display: none;
+        }
+        /*NAV BAR ********************************************/
+        
+        .top-container {
+            border: 3px solid black;
+            display: flex;
+            border-radius: 15px;
+            justify-content: space-between;
+            /* overflow: hidden; */
+            background-color: rgba(197, 197, 197, 0.7);
+            width: 68%;
+            height: 60px;
+            text-shadow: 2.1px 2.1px #000000;
+        }
+        
+        .Home,
+        .Career,
+        .Projects,
+        .Testimonies,
+        .Legal,
+        .Contact {
+            /* border: 1px solid black; */
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 8%;
+            color: white;
+            font-size: 10px;
+            flex: 1;
+            cursor: pointer;
+            transition: 240ms;
+            border-radius: 10px;
+        }
+        
+        .Home:hover,
+        .Career:hover,
+        .Projects:hover,
+        .Testimonies:hover,
+        .Legal:hover,
+        .Contact:hover {
+            background-color: rgba(209, 209, 209, 0.5);
+        }
+        
+        .media>a>img {
+            max-width: 60px;
+            max-height: 30px;
+            /* border: 1px solid black; */
+        }
+        
+        .media {
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            /*Acuérdate, flex-grow es en proporción a cuánto crecen el resto de elementos. En este caso 1.*/
+            flex-grow: 0.2;
+        }
+        /*IMAGEN ***********************************************/
+        
+        .image {
+            margin-top: 20px;
+            width: 68%;
+            height: 50%;
+            border: 3px solid black;
+            /* overflow: hidden; */
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 200ms;
+            background-image: url(índice.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .image>img {
+            min-width: 170%;
+            min-height: 170%;
+        }
+        
+        .image:hover {
+            opacity: 0.75;
+            transform: scale(0.99);
+        }
+        /*PÁRRAFO***********************************************/
+        
+        .paragraph {
+            margin-top: 20px;
+            width: 67%;
+            border: 3px solid black;
+            border-radius: 15px;
+            transition: 200ms;
+            color: white;
+            background-color: rgba(197, 197, 197, 0.7);
+            text-shadow: 2.1px 2.1px #000000;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+        /*FORMULARIO********************************************/
+        
+        .form {
+            display: flex;
+            margin-top: 20px;
+            width: 69%;
+            border: 3px solid black;
+            border-radius: 15px;
+            color: white;
+            background-color: rgba(197, 197, 197, 0.7);
+            text-shadow: 2.1px 2.1px #000000;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            justify-content: space-around;
+        }
+        
+        .form>* {
+            border: 1px solid rgb(53, 41, 41);
+            border-radius: 5px;
+            flex-basis: 250px;
+        }
+        
+        .form>button {
+            cursor: pointer;
+        }
+        /*FOOTER**************************************************/
+        
+        .footer {
+            display: flex;
+            margin-top: 20px;
+            width: 69%;
+            border: 3px solid black;
+            /* overflow: hidden; */
+            border-radius: 15px;
+            color: white;
+            background-color: rgba(197, 197, 197, 0.7);
+            text-shadow: 2.1px 2.1px #000000;
+            font-size: 20px;
+            justify-content: center;
+        }
+        /*MEDIA QUERIES*****************************************/
+        
+        @media screen and (max-width: 840px) {
+            .responsive {
+                display: flex;
+                order: -2;
+                border: 3px solid black;
+                border-radius: 15px;
+                justify-content: center;
+                background-color: rgba(197, 197, 197, 0.7);
+                width: 68%;
+                min-height: 30px;
+                text-shadow: 2.1px 2.1px #000000;
+                margin-bottom: 15px;
+            }
+            .responsive>button {
+                background-color: Transparent;
+                /* background-repeat: no-repeat; */
+                border: none;
+                overflow: hidden;
+                outline: none;
+                color: white;
+                text-shadow: 2.1px 2.1px #000000;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .responsive>p {
+                font-family: WebSymbols;
+                text-shadow: 1px 2.1px #000000;
+                font-size: 14px;
+                color: white;
+                align-self: center;
+                cursor: pointer;
+                margin-bottom: 15.3px;
+            }
+            .top-container {
+                flex-direction: row;
+                justify-content: space-between;
+                width: 87%;
+                height: 35%;
+                flex-wrap: wrap;
+                order: -2;
+            }
+            .Home,
+            .Career,
+            .Projects,
+            .Testimonies,
+            .Legal,
+            .Contact {
+                /* border: 1px solid black; */
+                flex-basis: 50%;
+                display: flex;
+                width: 100%;
+                font-size: 13.5px;
+            }
+            .media {
+                border: 1px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                height: auto;
+                flex-basis: 100%;
+            }
+            .media>a>img {
+                margin-right: 5px;
+                margin-left: 5px;
+                max-height: 45px;
+                /* border: 1px solid black; */
+            }
+            .form {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                width: 87%;
+                border: 3px solid black;
+                border-radius: 15px;
+                color: white;
+                background-color: rgba(197, 197, 197, 0.7);
+                text-shadow: 2.1px 2.1px #000000;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                justify-content: space-around;
+                order: -1;
+            }
+            .form>* {
+                border: 1px solid rgb(53, 41, 41);
+                border-radius: 5px;
+                flex-basis: 14px;
+                width: 75%;
+                margin: 6px;
+                align-self: center;
+            }
+            .image {
+                width: 87%;
+                height: 400px;
+                min-height: 30%;
+                background-position: center;
+            }
+            .paragraph {
+                margin-top: 20px;
+                width: 83%;
+                border: 3px solid black;
+                border-radius: 15px;
+                transition: 200ms;
+                color: white;
+                background-color: rgba(197, 197, 197, 0.7);
+                text-shadow: 2.1px 2.1px #000000;
+                padding-left: 15px;
+                padding-right: 15px;
+                text-align: justify;
+            }
+            .footer {
+                width: 87%;
+                display: flex;
+                align-items: center;
+                height: 25px;
+                width: 90%;
+            }
+        }
+        
+        @media screen and (max-width: 325px) {
+            .footer {
+                height: 25px;
+                width: 90%;
+            }
+            .image {
+                min-height: 30%;
+                background-position: center;
+            }
+        }
