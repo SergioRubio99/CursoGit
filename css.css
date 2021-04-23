@@ -21,6 +21,28 @@
         .responsive {
             display: none;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /*NAV BAR ********************************************/
         
         .top-container {
@@ -77,6 +99,24 @@
             /*Acuérdate, flex-grow es en proporción a cuánto crecen el resto de elementos. En este caso 1.*/
             flex-grow: 0.2;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /*IMAGEN ***********************************************/
         
         .image {
@@ -102,6 +142,22 @@
             opacity: 0.75;
             transform: scale(0.99);
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /*PÁRRAFO***********************************************/
         
         .paragraph {
@@ -117,6 +173,31 @@
             padding-right: 15px;
             text-align: justify;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /*FORMULARIO********************************************/
         
         .form {
@@ -142,6 +223,29 @@
         .form>button {
             cursor: pointer;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /*FOOTER**************************************************/
         
         .footer {
@@ -157,6 +261,37 @@
             font-size: 20px;
             justify-content: center;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /*MEDIA QUERIES*****************************************/
         
         @media screen and (max-width: 840px) {
